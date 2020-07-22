@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazorized.AdminLte.Content" Version="3.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blazorized.AdminLte.Plugins.Shared\Blazorized.AdminLte.Plugins.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
