@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazorized.AdminLte.Plugins
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazorized.AdminLte.Plugins.Site", "Blazorized.AdminLte.Plugins.Site\Blazorized.AdminLte.Plugins.Site.csproj", "{82C8B075-BD19-49A0-A992-CA4135711587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazorized.AdminLte.Plugins.Wasm", "Blazorized.AdminLte.Plugins.Wasm\Blazorized.AdminLte.Plugins.Wasm.csproj", "{D5F5E5D1-88E7-48F1-BC6B-5492F3A78B40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazorized.AdminLte.Plugins.Wasm", "Blazorized.AdminLte.Plugins.Wasm\Blazorized.AdminLte.Plugins.Wasm.csproj", "{D5F5E5D1-88E7-48F1-BC6B-5492F3A78B40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
