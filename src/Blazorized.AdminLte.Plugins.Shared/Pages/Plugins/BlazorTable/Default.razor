@@ -8,7 +8,7 @@
 <ContentMain>
     <Card>
         <Title>Blazor Table</Title>
-        <Contents>
+        <Body>
             <Table TableItem="PersonData" Items="data" PageSize="15" ColumnReorder="true" TableRowClass="@(x => x.RowClass)">
                 <BlazorTable.Column TableItem="PersonData" Title="Id" Field="@(x => x.id)" Sortable="true" Filterable="true" Width="10%" DefaultSortColumn="true" />
                 <BlazorTable.Column TableItem="PersonData" Title="Full Name" Field="@(x => x.full_name)" Sortable="true" Filterable="true" Width="20%" />
@@ -63,6 +63,6 @@
                 </DetailTemplate>
                 <Pager ShowPageNumber="true" ShowTotalCount="true" ShowPageSizes="true" />
             </Table>
-        </Contents>
+        </Body>
     </Card>
 </ContentMain>
