@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
-@inject IJSRuntime JS 
+@inject IJSRuntime JS
 <NavBar>
     <NavBarLeft>
         <NavBarMenuItem Link="/">Home</NavBarMenuItem>
@@ -17,28 +17,28 @@
                         <Message>Follow up</Message>
                     </UserMessage>
                 </NavBarDropDownMenuItem>
-                <DropdownDivider />
+                <Blazor.AdminLte.DropdownDivider />
                 <NavBarDropDownMenuItem>
                     <UserMessage DateTime="dt.AddHours(-4)" ProfilePicture="_content/Blazorized.AdminLte.Plugins.Shared/dist/img/user1-128x128.jpg" Icon="fas fa-star" IconColor="Color.Warning">
                         <UserName>Brad Diesel</UserName>
                         <Message>Call me whenever you can...</Message>
                     </UserMessage>
                 </NavBarDropDownMenuItem>
-                <DropdownDivider />
+                <Blazor.AdminLte.DropdownDivider />
                 <NavBarDropDownMenuItem>
                     <UserMessage DateTime="dt.AddDays(-8)" ProfilePicture="_content/Blazorized.AdminLte.Plugins.Shared/dist/img/user8-128x128.jpg" Icon="fas fa-star" IconColor="Color.Danger">
                         <UserName>John Pierce</UserName>
                         <Message>I got your message bro</Message>
                     </UserMessage>
                 </NavBarDropDownMenuItem>
-                <DropdownDivider />
+                <Blazor.AdminLte.DropdownDivider />
                 <NavBarDropDownMenuItem>
                     <UserMessage DateTime="dt.AddDays(-31)" ProfilePicture="_content/Blazorized.AdminLte.Plugins.Shared/dist/img/user3-128x128.jpg" Icon="fas fa-star">
                         <UserName>Nora Silvester</UserName>
                         <Message>The subject goes here</Message>
                     </UserMessage>
                 </NavBarDropDownMenuItem>
-                <DropdownDivider />
+                <Blazor.AdminLte.DropdownDivider />
                 <DropdownFooter OnClick="SeeAllMessages">See All Messages</DropdownFooter>
             </NavBarDropDownMenu>
         </NavBarDropDown>
@@ -46,19 +46,19 @@
             <NavBarBadge Color="Color.Warning" Icon="far fa-bell">15</NavBarBadge>
             <NavBarDropDownMenu>
                 <DropdownHeader>15 Notifications</DropdownHeader>
-                <DropdownDivider></DropdownDivider>
+                <Blazor.AdminLte.DropdownDivider></Blazor.AdminLte.DropdownDivider>
                 <NotificationMessage DateTime="dt.AddMinutes(-3)" Icon="fas fa-envelope mr-2">
                     <Message>4 new messages</Message>
                 </NotificationMessage>
-                <DropdownDivider></DropdownDivider>
+                <Blazor.AdminLte.DropdownDivider></Blazor.AdminLte.DropdownDivider>
                 <NotificationMessage DateTime="dt.AddHours(-12)" Icon="fas fa-users mr-2">
                     <Message>8 friend requests</Message>
                 </NotificationMessage>
-                <DropdownDivider></DropdownDivider>
+                <Blazor.AdminLte.DropdownDivider></Blazor.AdminLte.DropdownDivider>
                 <NotificationMessage DateTime="dt.AddDays(-2)" Icon="fas fa-file mr-2">
                     <Message>3 new reports</Message>
                 </NotificationMessage>
-                <DropdownDivider></DropdownDivider>
+                <Blazor.AdminLte.DropdownDivider></Blazor.AdminLte.DropdownDivider>
                 <DropdownFooter OnClick="SeeAllNotifications">See All Notifications</DropdownFooter>
             </NavBarDropDownMenu>
         </NavBarDropDown>
@@ -72,6 +72,14 @@
         <SideBarUserPanel UserImage="_content/Blazorized.AdminLte.Plugins.Shared/dist/img/user2-160x160.jpg" ImageEffect="ImageEffect.Circle">Alexander Pierce</SideBarUserPanel>
         @*<SideBarSearch></SideBarSearch>*@
     <SideBarMenu>
+        <SideBarTreeView MenuState="MenuState.Open" Icon="fas fa-tachometer-alt">
+            <Title>UI Elements</Title>
+            <Items>
+                <SideBarMenuItem Icon="far fa-circle" Link="buttons">
+                    Buttons
+                </SideBarMenuItem>
+            </Items>
+        </SideBarTreeView>
         <SideBarTreeView MenuState="MenuState.Open" Icon="fas fa-tachometer-alt">
             <Title>Tables</Title>
             <Items>

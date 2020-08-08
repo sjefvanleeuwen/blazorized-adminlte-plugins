@@ -1,4 +1,6 @@
 using Blazor.AdminLte;
+using Blazorise;
+using Blazorise.Bootstrap;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -41,6 +43,8 @@ namespace Blazorized.AdminLte.Plugins.Site
                 });
             }
             services.AddAdminLte();
+            services.AddBlazorise();
+            services.AddBootstrapProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

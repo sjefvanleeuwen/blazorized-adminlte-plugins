@@ -6,10 +6,10 @@
     </Header>
 </ContentHeader>
 <ContentMain>
-    <Card>
+    <Blazor.AdminLte.Card>
         <Title>Blazor Table</Title>
         <Body>
-            <Table TableItem="PersonData" Items="data" PageSize="15" ColumnReorder="true" TableRowClass="@(x => x.RowClass)">
+            <BlazorTable.Table TableItem="PersonData" Items="data" PageSize="15" ColumnReorder="true" TableRowClass="@(x => x.RowClass)">
                 <BlazorTable.Column TableItem="PersonData" Title="Id" Field="@(x => x.id)" Sortable="true" Filterable="true" Width="10%" DefaultSortColumn="true" />
                 <BlazorTable.Column TableItem="PersonData" Title="Full Name" Field="@(x => x.full_name)" Sortable="true" Filterable="true" Width="20%" />
                 <BlazorTable.Column TableItem="PersonData" Title="Email" Field="@(x => x.email)" Sortable="true" Filterable="true" Width="20%">
@@ -34,7 +34,7 @@
                     </Template>
                 </BlazorTable.Column>
                 <DetailTemplate TableItem="PersonData" Context="context2">
-                    <Table TableItem="PersonData" Items="data" PageSize="15" ColumnReorder="true" TableRowClass="@(x => x.RowClass)" style="background-color: white;">
+                    <BlazorTable.Table TableItem="PersonData" Items="data" PageSize="15" ColumnReorder="true" TableRowClass="@(x => x.RowClass)" style="background-color: white;">
                         <BlazorTable.Column TableItem="PersonData" Title="Id" Field="@(x => x.id)" Sortable="true" Filterable="true" Width="10%" DefaultSortColumn="true" />
                         <BlazorTable.Column TableItem="PersonData" Title="Full Name" Field="@(x => x.full_name)" Sortable="true" Filterable="true" Width="20%" />
                         <BlazorTable.Column TableItem="PersonData" Title="Email" Field="@(x => x.email)" Sortable="true" Filterable="true" Width="20%">
@@ -59,10 +59,10 @@
                             </Template>
                         </BlazorTable.Column>
                         <Pager ShowPageNumber="true" ShowTotalCount="true" />
-                    </Table>
+                    </BlazorTable.Table>
                 </DetailTemplate>
                 <Pager ShowPageNumber="true" ShowTotalCount="true" ShowPageSizes="true" />
-            </Table>
+            </BlazorTable.Table>
         </Body>
-    </Card>
+    </Blazor.AdminLte.Card>
 </ContentMain>
