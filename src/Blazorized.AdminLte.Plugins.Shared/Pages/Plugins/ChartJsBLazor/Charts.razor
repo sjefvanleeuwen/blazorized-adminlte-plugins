@@ -1,0 +1,167 @@
+﻿@namespace Blazorized.AdminLte.Plugins.Shared.Pages
+@page "/charts"
+<ContentHeader>
+    <Header>
+        Charts
+    </Header>
+</ContentHeader>
+<ContentMain>
+    <Card>
+        <Title>Bar Charts</Title>
+        <Body>
+            <Blazor.AdminLte.Row>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Horizontal</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <HorizontalBarChartComponent></HorizontalBarChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Simple</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <SimpleBarChartComponent></SimpleBarChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+            </Blazor.AdminLte.Row>
+            <Blazor.AdminLte.Row>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Stacked</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <StackedBarChartComponent></StackedBarChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Time</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <TimeBarChartComponent></TimeBarChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+            </Blazor.AdminLte.Row>
+        </Body>
+    </Card>
+    <Card>
+        <Title>Line Charts</Title>
+        <Body>
+            <Blazor.AdminLte.Row>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Linear</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <LinearLineChartComponent></LinearLineChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Logarithmic</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <LogarithmicLineChartComponent></LogarithmicLineChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+            </Blazor.AdminLte.Row>
+            <Blazor.AdminLte.Row>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Time Line</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <TimeLineChartComponent></TimeLineChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Sine</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <SineLineChartComponent></SineLineChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+            </Blazor.AdminLte.Row>
+        </Body>
+    </Card>
+    <Card>
+        <Title>Various Charts</Title>
+        <Body>
+            <Blazor.AdminLte.Row>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Bubble</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <BubbleChartComponent></BubbleChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Doughnut</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <DoughnutChartComponent></DoughnutChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+            </Blazor.AdminLte.Row>
+            <Blazor.AdminLte.Row>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Pie</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <PieChartComponent></PieChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Polar</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <PolarAreaChartComponent></PolarAreaChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+            </Blazor.AdminLte.Row>
+            <Blazor.AdminLte.Row>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Radar</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <RadarChartComponent></RadarChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+                <Blazor.AdminLte.Column Width="Width.Six" Size="Size.Medium">
+                    <Card HeaderBackgroundColor="Color.Primary" ToolOptions="new CardToolOptions { Collapsable = true}">
+                        <Title><CardTitle>Scatter</CardTitle></Title>
+                        <Header><CardTools /></Header>
+                        <Body>
+                            <ScatterChartComponent></ScatterChartComponent>
+                        </Body>
+                    </Card>
+                </Blazor.AdminLte.Column>
+            </Blazor.AdminLte.Row>
+        </Body>
+    </Card>
+</ContentMain>
+@code {
+
+}
