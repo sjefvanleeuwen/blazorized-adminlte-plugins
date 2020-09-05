@@ -26,6 +26,8 @@ Curated list of integrations. Though some plugins are just references to nuget p
 More opinionated than the original AdminLTE distribution, which relies on dataTable.js 
 https://github.com/IvanJosipovic/BlazorTable
 
+![Table](./docs/img/screens/table.png)
+
 ## ChartJs.Blazor
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE.md)
@@ -35,3 +37,5 @@ https://github.com/IvanJosipovic/BlazorTable
 
 ChartJS is also used in the original AdminLTE ditribution. This projects Wraps the JS library.
 https://github.com/mariusmuntean/ChartJs.Blazor
+
+![Charts](./docs/img/screens/charts.png)
