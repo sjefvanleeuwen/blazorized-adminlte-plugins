@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Blazorized.AdminLte" Version="0.0.8" />
+    <PackageReference Include="BlazorMonacoYaml" Version="0.0.2" />
     <PackageReference Include="BlazorTable" Version="1.13.1" />
     <PackageReference Include="ChartJs.Blazor" Version="2.0.0-preview1" />
     <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.8" />
