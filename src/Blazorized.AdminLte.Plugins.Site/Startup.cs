@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Linq;
 using System.Net.Http;
+using Westwind.AspNetCore.LiveReload;
 
 namespace Blazorized.AdminLte.Plugins.Site
 {
@@ -24,6 +25,7 @@ namespace Blazorized.AdminLte.Plugins.Site
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddLiveReload();
             services.AddRazorPages();
             services.AddServerSideBlazor();
             // Server Side Blazor doesn't register HttpClient by default
@@ -46,6 +48,7 @@ namespace Blazorized.AdminLte.Plugins.Site
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseLiveReload();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
