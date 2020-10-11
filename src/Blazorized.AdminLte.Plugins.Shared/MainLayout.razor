@@ -80,6 +80,17 @@
                 </SideBarMenuItem>
             </Items>
         </SideBarTreeView>
+        <SideBarTreeView MenuState="MenuState.Open" Icon="fas fa-tachometer-alt">
+            <Title>Monaco</Title>
+            <Items>
+                <SideBarMenuItem Icon="far fa-circle" Link="plugins/blazor-monaco-yaml/editor">
+                    Yaml Editor
+                </SideBarMenuItem>
+                <SideBarMenuItem Icon="far fa-circle" Link="/plugins/blazor-monaco-yaml/diff-editor">
+                    Yaml Diff Editor
+                </SideBarMenuItem>
+            </Items>
+        </SideBarTreeView>
         <SideBarMenuItem Link="simple-link" Icon="fas fa-th">
             Simple Link
             <span class="right badge badge-danger">New</span>
@@ -87,6 +98,7 @@
         <SideBarMenuItem Icon="fas fa-th" Link="charts">
             Charts
         </SideBarMenuItem>
+
     </SideBarMenu>
     </SideBar>
 </SideBarContainer>

@@ -10,9 +10,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="_content/Blazorized.AdminLte.Content/plugins/fontawesome-free/css/all.min.css">
+    <!--BlazorMonaco-->
+    <link href="_content/BlazorMonacoYaml/lib/monaco-editor-yaml/min/vs/editor/editor.main.css" rel="stylesheet" />
+    <!--/BlazorMonaco-->
     <!-- Theme style -->
-    <link rel="stylesheet" href="_content/Blazorized.AdminLte.Content/dist/css/adminlte.min.css">
-    <link href="_content/Blazorized.AdminLte.Plugins.Shared/css/site.css" rel="stylesheet" />
+    <!-- Blazorized.AdmintLte.Plugins -->
+    <link rel="stylesheet" href="_content/Blazorized.AdminLte.Plugins/css/monaco.css" />
+    <link rel="stylesheet" href="_content/Blazorized.AdminLte.Plugins/css/split.css" />
+    <!-- /Blazorized.AdmintLte.Plugins -->
+    <link rel="stylesheet" href="_content/Blazorized.AdminLte.Content/dist/css/adminlte.min.css" />
+    <link rel="stylesheet" href="_content/Blazorized.AdminLte.Plugins.Shared/css/site.css" />
+    <!-- Blazor Chart -->
+    <link rel="stylesheet" href="_content/ChartJs.Blazor/ChartJSBlazor.css" />
 </head>
 
 <body class="hold-transition sidebar-mini sidebar-collapse">
@@ -27,6 +36,7 @@
     <script src="_framework/blazor.webassembly.js"></script>
     <!-- jQuery -->
     <script src="_content/Blazorized.AdminLte.Content/plugins/jquery/jquery.min.js"></script>
+    <script src="_content/Blazorized.AdminLte.Plugins/js/split.js"></script>
     <!-- Bootstrap 4 -->
     <script src="_content/Blazorized.AdminLte.Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
@@ -36,9 +46,17 @@
     <script src="_content/ChartJs.Blazor/moment-with-locales.min.js" type="text/javascript" language="javascript"></script>
     <script src="_content/ChartJs.Blazor/Chart.min.js" type="text/javascript" language="javascript"></script>
     <script src="_content/ChartJs.Blazor/ChartJsBlazorInterop.js" type="text/javascript" language="javascript"></script>
-    <link rel="stylesheet" href="_content/ChartJs.Blazor/ChartJSBlazor.css" />
-    <script src="_content/Blazorise/blazorise.js"></script>
-    <script src="_content/Blazorise.Bootstrap/blazorise.bootstrap.js"></script>
+    <!--BlazorMonaco-->
+    <!--BlazorMonaco Yaml-->
+    <script src="_content/BlazorMonacoYaml/lib/monaco-editor-yaml/min/vs/loader.js"></script>
+    <script>require.config({ paths: { 'vs': '_content/BlazorMonacoYaml/lib/monaco-editor-yaml/min/vs' } });</script>
+    <script src="_content/BlazorMonacoYaml/lib/monaco-editor-yaml/min/vs/editor/editor.main.js"></script>
+    <!--/BlazorMonaco Yaml-->
+    <script src="_content/BlazorMonaco/jsInterop.js"></script>
+    <!--/BlazorMonaco-->
+    <!-- Blazorized.AdmintLte.Plugins -->
+    <script src="_content/Blazorized.AdminLte.Plugins/js/split.interop.js"></script>
+    <!-- /Blazorized.AdmintLte.Plugins -->
 </body>
 
 </html>

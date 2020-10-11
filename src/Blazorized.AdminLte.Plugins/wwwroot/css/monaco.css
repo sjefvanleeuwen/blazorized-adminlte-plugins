@@ -1,0 +1,28 @@
+﻿/* Styles needed for correct integration in Blazorized AdminLTE */
+.editorContent {
+    height: 100%;
+}
+
+﻿.editor {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.editorError {
+    color: red !important;
+    background: #f2d9d8;
+    cursor: help;
+}
+
+.editorErrorGlyph {
+    color: red;
+    font-size: 19px;
+    margin-left: 5px;
+    cursor: help;
+}
+
+#monacoEditorYaml {
+    height: 100%;
+}
+
