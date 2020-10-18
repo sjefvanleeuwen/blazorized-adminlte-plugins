@@ -39,3 +39,10 @@ ChartJS is also used in the original AdminLTE ditribution. This projects Wraps t
 https://github.com/mariusmuntean/ChartJs.Blazor
 
 ![Charts](./docs/img/screens/charts.png)
+
+## BlazorMonacoYaml
+
+Integration of blazor monaco as a yaml editor. Includes Diff editor integration.
+https://github.com/sjefvanleeuwen/blazor-monaco-yaml
+
+![Charts](./docs/img/screens/yaml-editor.png)
