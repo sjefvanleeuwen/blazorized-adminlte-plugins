@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Blazorized.AdminLte.Content" Version="3.0.5" />
-    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.2.12" />
+    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.2.14" />
   </ItemGroup>
 
   <ItemGroup>
