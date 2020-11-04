@@ -3,16 +3,46 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>Blazorized.AdminLte.Plugins</PackageId>
+    <Authors>Sjef van Leeuwen</Authors>
+    <Company></Company>
+    <Product>Plugins for Blazorized AdminLTE</Product>
+    <PackageProjectUrl>https://github.com/sjefvanleeuwen/blazorized-adminlte-plugins</PackageProjectUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/sjefvanleeuwen/blazorized-adminlte-plugins</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags></PackageTags>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Title>ADMINLTE for Blazor</Title>
+    <Description>ADMINLTE plugins for Blazor is a collection of reusable components, with which you can easily develop digital services as a designer or developer. This project gathers a set of curated UI components that have been tested against the Blazorized AdminLTE project.</Description>
+    <NeutralLanguage></NeutralLanguage>
+    <Copyright>Copyright (c) 2020 Sjef van Leeuwen</Copyright>
+    <PackageIcon>blazor-adminlte-256.png</PackageIcon>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageVersion>0.0.1-alpha1</PackageVersion>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
 
   <ItemGroup>
-    <PackageReference Include="Blazorized.AdminLte" Version="0.1.1" />
-    <PackageReference Include="BlazorMonacoYaml" Version="0.0.2" />
+    <PackageReference Include="Blazorized.AdminLte" Version="0.1.2" />
+    <PackageReference Include="BlazorMonacoYaml" Version="1.5.0" />
     <PackageReference Include="BlazorTable" Version="1.13.1" />
     <PackageReference Include="ChartJs.Blazor" Version="2.0.0-preview1" />
     <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.9" />
   </ItemGroup>
-
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\docs\img\blazor-adminlte-256.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
