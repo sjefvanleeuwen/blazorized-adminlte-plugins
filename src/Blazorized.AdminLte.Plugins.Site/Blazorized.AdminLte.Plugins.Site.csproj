@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blazorized.AdminLte.Content" Version="3.0.5" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Blazorized.AdminLte.Plugins.Shared\Blazorized.AdminLte.Plugins.Shared.csproj" />
   </ItemGroup>
 

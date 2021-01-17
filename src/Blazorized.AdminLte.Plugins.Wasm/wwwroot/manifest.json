@@ -3,7 +3,7 @@
   "short_name": "Blazorized.AdminLte.Plugins.Wasm",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#FFFFFF",
   "theme_color": "#03173d",
   "icons": [
     {
