@@ -1,0 +1,24 @@
+﻿@page "/plugins/blazor-plotly"
+@namespace Blazorized.AdminLte.Plugins.Shared.Pages
+<ContentHeader>
+    <Header>
+        Index
+    </Header>
+</ContentHeader>
+<ContentMain>
+    <Blazor.AdminLte.Card ToolOptions="new CardToolOptions { Collapsable = true }">
+        <Header>
+           <CardTools></CardTools>
+        </Header>
+        <Title>Surface Chart</Title>
+        <Body>
+            @if (IsLoaded)
+            {
+                <PlotlyChart style="height: 60vh; min-height: 350px" Layout="layout" Config="config" Data="data" Id="MapChart" @ref="plotlyChart" />
+            }
+        </Body>
+    </Blazor.AdminLte.Card>
+</ContentMain>
+@code {
+    
+}

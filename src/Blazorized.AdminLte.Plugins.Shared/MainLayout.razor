@@ -72,34 +72,42 @@
         <!-- Sidebar user panel (optional) -->
         <SideBarUserPanel UserImage="_content/Blazorized.AdminLte.Plugins.Shared/dist/img/user2-160x160.jpg" ImageEffect="ImageEffect.Circle">Alexander Pierce</SideBarUserPanel>
         @*<SideBarSearch></SideBarSearch>*@
-        <SideBarMenu>
-            <SideBarTreeView Icon="fas fa-tachometer-alt">
-                <Title>Tables</Title>
-                <Items>
-                    <SideBarMenuItem Icon="far fa-circle" Link="plugins/blazor-table">
-                        Blazor Table
-                    </SideBarMenuItem>
-                </Items>
-            </SideBarTreeView>
-            <SideBarTreeView Icon="fas fa-tachometer-alt">
-                <Title>Monaco</Title>
-                <Items>
-                    <SideBarMenuItem Icon="far fa-circle" Link="plugins/blazor-monaco-yaml/editor">
-                        Yaml Editor
-                    </SideBarMenuItem>
-                    <SideBarMenuItem Icon="far fa-circle" Link="/plugins/blazor-monaco-yaml/diff-editor">
-                        Yaml Diff Editor
-                    </SideBarMenuItem>
-                </Items>
-            </SideBarTreeView>
-            <SideBarMenuItem Link="simple-link" Icon="fas fa-th">
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-            </SideBarMenuItem>
-            <SideBarMenuItem Icon="fas fa-th" Link="charts">
-                Charts
-            </SideBarMenuItem>
-        </SideBarMenu>
+    <SideBarMenu>
+        <SideBarTreeView Icon="fas fa-tachometer-alt">
+            <Title>Tables</Title>
+            <Items>
+                <SideBarMenuItem Icon="far fa-circle" Link="plugins/blazor-table">
+                    Blazor Table
+                </SideBarMenuItem>
+            </Items>
+        </SideBarTreeView>
+        <SideBarTreeView Icon="fas fa-tachometer-alt">
+            <Title>Monaco</Title>
+            <Items>
+                <SideBarMenuItem Icon="far fa-circle" Link="plugins/blazor-monaco-yaml/editor">
+                    Yaml Editor
+                </SideBarMenuItem>
+                <SideBarMenuItem Icon="far fa-circle" Link="/plugins/blazor-monaco-yaml/diff-editor">
+                    Yaml Diff Editor
+                </SideBarMenuItem>
+            </Items>
+        </SideBarTreeView>
+        <SideBarMenuItem Link="simple-link" Icon="fas fa-th">
+            Simple Link
+            <span class="right badge badge-danger">New</span>
+        </SideBarMenuItem>
+        <SideBarTreeView Icon="fas fa-tachometer-alt">
+            <Title>Charts</Title>
+            <Items>
+                <SideBarMenuItem Icon="fas fa-th" Link="/plugins/blazor-plotly">
+                    Plotly
+                </SideBarMenuItem>
+                <SideBarMenuItem Icon="fas fa-th" Link="charts">
+                    ChartJS
+                </SideBarMenuItem>
+            </Items>
+        </SideBarTreeView>
+    </SideBarMenu>
     </SideBar>
 </SideBarContainer>
 <ContentWrapper>

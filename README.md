@@ -46,3 +46,10 @@ Integration of blazor monaco as a yaml editor. Includes Diff editor integration.
 https://github.com/sjefvanleeuwen/blazor-monaco-yaml
 
 ![Charts](./docs/img/screens/yaml-editor.png)
+
+## Plotly Blazor
+
+Integration of Plotly Blazor for (primarily) 3D Surface Charts.
+https://github.com/LayTec-AG/Plotly.Blazor
+
+![Charts](./docs/img/screens/surface-plot.png)
