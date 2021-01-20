@@ -20,7 +20,7 @@
     <Copyright>Copyright (c) 2020-2021 Sjef van Leeuwen</Copyright>
     <PackageIcon>blazor-adminlte-256.png</PackageIcon>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
