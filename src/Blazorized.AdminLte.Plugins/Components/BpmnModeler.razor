@@ -1,0 +1,23 @@
+﻿@using System.Net
+@using System.Text
+@inject IJSRuntime JSRuntime
+<div @ref="Canvas" id="canvas" style="height:100%"></div>
+@code {
+
+    public ElementReference Canvas { get; set; }
+    public string NamedInstance { get; set; } = Guid.NewGuid().ToString();
+
+    protected async override void OnAfterRender(bool firstRender)
+    {
+        // in js/bpmn.interop.js
+        await JSRuntime.InvokeAsync<object>("bpmnModeler.create", new object[] { NamedInstance, Canvas /* DotNetObjectReference.Create(this) */ });
+        string xmlResult = string.Empty;
+        using (HttpClient client = new HttpClient())
+        {
+            //client.Encoding = UTF8Encoding.UTF8;
+            //client.Headers[HttpRequestHeader.ContentType] = "text/xml";
+            xmlResult = await client.GetStringAsync("https://raw.githubusercontent.com/bpmn-io/bpmn-js/72745c7c97e52ac8f4c65b381ca9724690f27aa5/test/fixtures/bpmn/features/replace/01_replace.bpmn");
+        }
+        await JSRuntime.InvokeAsync<object>("bpmnModeler.openDiagram", new object[] { NamedInstance, xmlResult });
+    }
+}
