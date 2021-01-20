@@ -43,6 +43,7 @@ https://github.com/mariusmuntean/ChartJs.Blazor
 ## BlazorMonacoYaml
 
 Integration of blazor monaco as a yaml editor. Includes Diff editor integration.
+
 https://github.com/sjefvanleeuwen/blazor-monaco-yaml
 
 ![Charts](./docs/img/screens/yaml-editor.png)
@@ -50,6 +51,15 @@ https://github.com/sjefvanleeuwen/blazor-monaco-yaml
 ## Plotly Blazor
 
 Integration of Plotly Blazor for (primarily) 3D Surface Charts.
+
 https://github.com/LayTec-AG/Plotly.Blazor
 
 ![Charts](./docs/img/screens/surface-plot.png)
+
+## Business Process Management (BPMN)
+
+Integration of BPMN.IO (Camunda) BPMN Modeler / Design surface
+
+http://www.bpmn.io
+
+![BPMN](./docs/img/screens/bpmn.png)
